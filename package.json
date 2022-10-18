@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss css/tailwind.css -o public/css/styles.css --watch", 
+    "dev": "postcss css/tailwind.css -o public/css/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.12",
+    "glider-js": "^1.7.7",
     "postcss-cli": "^10.0.0",
     "tailwindcss": "^3.1.8"
   }

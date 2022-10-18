@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="glider.min.css"> -->
+    <!-- <link href="Glider/glider.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <title>mfcaicedo</title>
 </head>
 
@@ -58,84 +61,26 @@
                 </div>
                 <div class="">
                     <div class="pb-5">
-                        <ul>
-                            <li class="" type="disc">
-                                <h3 class="font-bold text-xl">Ver series y películas</h3>
-                                <p>Ver series y películas es uno de mis pasatiempos favoritos, por lo general las que
-                                    más me
-                                    llaman la atención son las de acción, ciencia, ciencia ficción. </p>
-                                <p>De las que he mirado, estas son las que más recomiendo</p>
-                                <div class="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-2">
-                                    <div
-                                        class="flex flex-col sm:flex-col gap-2 justify-between border border-gray-500 rounded p-3">
-                                        <div class="">
-                                            <figure>
-                                                <img src="./img/peli1.jpg" alt="Imagen de la pelicula" class="w-full h-auto">
-                                            </figure>
-                                        </div>
-                                        <div class="text-white">
-                                            <h3 class="font-bold text-lg">El código enigma</h3>
-                                            <!-- <p class="text-sm">Blog para cursos y recetas de café</p> -->
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex flex-col sm:flex-col gap-2 justify-between border border-gray-500 rounded p-3">
-                                        <div class="">
-                                            <figure>
-                                                <img src="./img/peli2.jpg" alt="Imagen de la pelicula" class="w-full h-auto">
-                                            </figure>
-                                        </div>
-                                        <div class="text-white">
-                                            <h3 class="font-bold text-lg">Interestelar</h3>
-                                            <!-- <p class="text-sm">Blog para cursos y recetas de café</p> -->
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex flex-col sm:flex-col gap-2 justify-between border border-gray-500 rounded p-3">
-                                        <div class="">
-                                            <figure>
-                                                <img src="./img/peli3.jpg" alt="Imagen de la pelicula" class="w-full h-auto">
-                                            </figure>
-                                        </div>
-                                        <div class="text-white">
-                                            <h3 class="font-bold text-lg">Hacker: Ningún sistema es seguro</h3>
-                                            <!-- <p class="text-sm">Blog para cursos y recetas de café</p> -->
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex flex-col sm:flex-col gap-2 justify-between border border-gray-500 rounded p-3">
-                                        <div class="">
-                                            <figure>
-                                                <img src="./img/peli4.jpg" alt="Imagen de la pelicula" class="w-full h-auto">
-                                            </figure>
-                                        </div>
-                                        <div class="text-white">
-                                            <h3 class="font-bold text-lg">Breaking bad</h3>
-                                            <!-- <p class="text-sm">Blog para cursos y recetas de café</p> -->
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex flex-col sm:flex-col gap-2 justify-between border border-gray-500 rounded p-3">
-                                        <div class="">
-                                            <figure>
-                                                <img src="./img/peli5.jpg" alt="Imagen de la pelicula" class="w-full h-auto">
-                                            </figure>
-                                        </div>
-                                        <div class="text-white">
-                                            <h3 class="font-bold text-lg">Los juegos del hambre</h3>
-                                            <!-- <p class="text-sm">Blog para cursos y recetas de café</p> -->
-                                        </div>
-                                    </div>
-                                    
+                        <!-- CARRUSEL PARA LAS IMÁGENES -->
+                        <div id="contenedor" class="">
+                            <h3 class="font-bold text-xl">Ver series y películas</h3>
+                            <p>Ver series y películas es uno de mis pasatiempos favoritos, por lo general las
+                                que
+                                más me
+                                llaman la atención son las de acción, ciencia, ciencia ficción. </p>
+                            <p class="mb-4">De las que he mirado, estas son las que más recomiendo</p>
+                            <div class="border border-gray-400 py-0 px-0 rounded">
+                                <div id="lista" class="h-96 border border-black rounded ">
+                                    <div class=""> <img src="./img/peli2.jpg" alt=""></div>
+                                    <div class=""> <img src="./img/peli3.jpg" alt=""> </div>
+                                    <div class=""> <img src="./img/peli4.jpg" alt=""> </div>
+                                    <div class=""> <img src="./img/peli5.jpg" alt=""> </div>
                                 </div>
-                            </li>
-                            
-                            <li>
-                                <!-- jugar fultbol -->
-                                <div class="">
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <button class="prev font-extrabold text-2xl p-2 absolute block w-10 opacity-60 bg-gray-700 h-10 pb-4 border-none cursor-pointer leading-3" style="top:calc(50% + 290px);" aria-label="Anterior" type="button"> &laquo;</button>
+                            <button class="next font-extrabold text-2xl p-2 absolute block w-10 opacity-60 bg-gray-700 h-10 pb-4 border-none cursor-pointer leading-3" style="top:calc(50% + 290px); right: 40px;" aria-label="Siguiente" type="button">&raquo;</button>
+                            <div role="tablist" class="puntos"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,6 +129,8 @@
     </div>
     <!-- SCRIPTS -->
     <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>
